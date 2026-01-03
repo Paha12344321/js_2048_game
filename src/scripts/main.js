@@ -14,6 +14,8 @@ const messageLose = document.querySelector('.message-lose');
 button.addEventListener('click', () => {
   game.restart();
   button.textContent = 'Restart';
+  button.classList.remove('start');
+  button.classList.add('restart');
   render();
   hideMessages();
 });
